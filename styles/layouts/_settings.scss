@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "allura";
+  src: url(../../assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../../assets/fonts/Roboto-Light.ttf);
+}
+
+$font1: allura, trebuchet;
+$font2: poppins, sans-serif;
+$font3: roboto, serif;
+$white1: rgb(249, 246, 238);
+$white2: rgb(232, 232, 232);
+$black1: black;
+$black2: rgb(29, 28, 28);
+$black3: rgb(38, 38, 38);
+$grey1: rgba(105, 105, 105);
+$grey2: rgb(224, 224, 224);
+$grey3: rgb(182, 182, 182);
+$yellow: rgb(149, 109, 39);
+$yellow1: rgb(56, 38, 7);
+
+@mixin entete {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin parent-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin parent-children {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin title1 {
+  font-family: $font1;
+  color: $yellow;
+}
+@mixin title2 {
+  font-family: $font2;
+  font-weight: bold;
+}
+@mixin dish {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+@mixin box {
+  width: 60px;
+  height: 60px;
+  border-color: $black2;
+  border: 1px solid $black2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+body {
+  background-color: $black2;
+  font-family: $font3;
+}
+
+a,
+a:visited {
+  color: $black1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  &:nth-child(3) {
+    margin-left: 110px;
+  }
+}
+
+p {
+  font-family: $font3;
+}

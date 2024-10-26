@@ -1,0 +1,723 @@
+main {
+  width: 92%;
+  margin: 0 auto;
+
+  .section-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: $grey2;
+
+    @media screen and (max-width: 485px) {
+      grid-template-columns: 100%;
+      height: 60vh;
+    }
+    .left-part {
+      border: 1px dashed $yellow;
+      margin: 12px;
+      padding: 5px 6px;
+      text-align: center;
+
+      @media screen and (max-width: 485px) {
+        margin: 10px;
+      }
+      span {
+        @include title1;
+        font-size: 1.6rem;
+        font-weight: 100;
+        position: relative;
+        top: 25px;
+      }
+      h3 {
+        @include title2;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin: 15px 0 20px 0;
+      }
+      img:nth-of-type(1) {
+        height: 27px;
+
+        @media screen and (max-width: 485px) {
+          height: 22px;
+        }
+
+        @media screen and (max-width: 405px) {
+          height: 22px;
+        }
+      }
+      p {
+        margin-top: 25px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 485px) {
+          width: 80%;
+          margin: 25px auto;
+        }
+      }
+      h4 {
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        margin-top: 5px;
+
+        @media screen and (max-width: 485px) {
+          margin-top: 10px;
+        }
+      }
+      h5 {
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        margin-top: 3px;
+        color: $grey3;
+        padding-bottom: 20px;
+
+        @media screen and (max-width: 485px) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .right-part {
+      background: url(../../assets/img/store-01.jpg) center/cover;
+
+      @media screen and (max-width: 485px) {
+        display: none;
+      }
+    }
+  }
+
+  .section-2 {
+    margin-bottom: 145px;
+
+    @media screen and (max-width: 485px) {
+      height: 95vh;
+      margin-bottom: 0px;
+    }
+    .main-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title1 {
+        @include title1;
+        font-size: 1.6rem;
+        margin: 40px 0 25px 0;
+
+        @media screen and (max-width: 485px) {
+          margin-top: 55px;
+        }
+      }
+      img {
+        height: 27px;
+
+        @media screen and (max-width: 485px) {
+          height: 22px;
+        }
+
+        @media screen and (max-width: 405px) {
+          height: 22px;
+        }
+      }
+    }
+    .menu-list {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin: 30px 0 45px 345px;
+
+        @media screen and (max-width: 485px) {
+          margin: 35px 80px 25px 50px;
+        }
+
+        @media screen and (max-width: 405px) {
+          margin: 35px 100px 30px 6px;
+        }
+      }
+      li {
+        color: $white1;
+        cursor: pointer;
+
+        &:hover {
+          color: $yellow;
+        }
+
+        @media screen and (max-width: 485px) {
+          font-size: 0.8rem;
+          margin-right: 35px;
+        }
+
+        @media screen and (max-width: 405px) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  .section-2bis {
+    background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 485px) {
+      margin: 0 auto;
+      min-height: 70vh;
+      width: 85%;
+    }
+    .dish-list {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      background: $white1;
+      width: 60%;
+      margin: 0 auto;
+      border-top: 3px solid $yellow;
+      align-items: center;
+      position: absolute;
+      bottom: 160px;
+      left: 270px;
+
+      @media screen and (max-width: 485px) {
+        width: 88%;
+        height: 116vh;
+        display: flex;
+        flex-direction: column;
+        bottom: 155px;
+        left: 25px;
+      }
+
+      @media screen and (max-width: 405px) {
+        width: 90%;
+        height: 120vh;
+        bottom: 115px;
+        left: 15px;
+      }
+      .dish {
+        border-bottom: 1px solid transparent;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 15px;
+
+        @media screen and (max-width: 485px) {
+          display: flex;
+          flex-direction: column;
+          padding-top: 15px;
+        }
+      }
+      .menu {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        justify-content: center;
+        margin: 20px;
+        padding-bottom: 35px;
+        border-bottom: 1px dashed $grey3;
+
+        @media screen and (max-width: 485px) {
+          grid-template-columns: 30% 45% 25%;
+          padding-bottom: 17px;
+          margin: 5px;
+        }
+
+        @media screen and (max-width: 485px) {
+          grid-template-columns: 32% 43% 25%;
+        }
+      }
+      div {
+        h3 {
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          margin-bottom: 5px;
+
+          @media screen and (max-width: 485px) {
+            font-size: 0.7rem;
+          }
+
+          @media screen and (max-width: 405px) {
+            font-size: 0.7rem;
+          }
+        }
+        span {
+          color: $yellow;
+          font-size: 1rem;
+          font-weight: 900;
+          display: grid;
+          height: 100%;
+          justify-items: center;
+
+          @media screen and (max-width: 485px) {
+            font-size: 0.8rem;
+          }
+
+          @media screen and (max-width: 405px) {
+            font-size: 0.8rem;
+          }
+        }
+        p {
+          @media screen and (max-width: 485px) {
+            font-size: 0.9rem;
+          }
+
+          @media screen and (max-width: 405px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section-3 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 65%;
+    margin: 0 250px;
+
+    @media screen and (max-width: 485px) {
+      display: flex;
+      flex-direction: column;
+      height: 235vh;
+      width: 70%;
+      margin: 70px auto;
+    }
+    .timetable {
+      background: $black1;
+      position: relative;
+
+      @media screen and (max-width: 485px) {
+        margin-top: 20px;
+      }
+
+      .tabledash {
+        border: 1px dashed $grey3;
+        height: 500px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .title1 {
+        @include title1;
+        font-size: 2rem;
+        position: absolute;
+        bottom: 448px;
+      }
+      .title2 {
+        @include title2;
+        color: $white1;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+      }
+      #logo {
+        margin-bottom: 30px;
+        height: 27px;
+
+        @media screen and (max-width: 485px) {
+          height: 22px;
+        }
+
+        @media screen and (max-width: 405px) {
+          height: 22px;
+        }
+      }
+      h4 {
+        color: $yellow;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: bolder;
+        margin-top: 40px;
+      }
+      p {
+        color: $white1;
+        font-size: 0.8rem;
+        margin: 15px 0 25px 0;
+        text-align: center;
+      }
+    }
+    .booking {
+      background: $white1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+
+      @media screen and (max-width: 485px) {
+        width: 100%;
+        text-align: center;
+      }
+      .title1 {
+        @include title1;
+        font-size: 2.1rem;
+        margin-top: 80px;
+
+        @media screen and (max-width: 485px) {
+          font-size: 2rem;
+        }
+      }
+      .title2 {
+        @include title2;
+        color: $black1;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 105px;
+
+        @media screen and (max-width: 485px) {
+          font-size: 1.2rem;
+        }
+      }
+      #logo {
+        margin: 40px 0 25px 0;
+        height: 27px;
+
+        @media screen and (max-width: 485px) {
+          height: 22px;
+        }
+
+        @media screen and (max-width: 405px) {
+          height: 22px;
+        }
+      }
+      .infos-booking {
+        margin-bottom: 20px;
+        #client,
+        #birthday,
+        #appt,
+        #name,
+        #phone,
+        #email {
+          outline: 0;
+          border-width: 0 0 2px;
+          border-color: $grey2;
+          background: none;
+          width: 160px;
+          margin-right: 15px;
+          padding-bottom: 12px;
+        }
+        #client,
+        #birthday,
+        #appt {
+          margin-bottom: 30px;
+          margin-top: 20px;
+        }
+        #name,
+        #phone,
+        #email {
+          margin-bottom: 20px;
+        }
+        .submit-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .btn {
+            border: 1px solid $grey3;
+            border-radius: 20em;
+            color: $white1;
+            text-transform: uppercase;
+            font-weight: bolder;
+            letter-spacing: 3px;
+            background: $black2;
+            width: 150px;
+            padding: 15px;
+            margin: 30px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+              transform: translateY(5px);
+            }
+
+            @media screen and (max-width: 485px) {
+              width: 120px;
+              letter-spacing: 2px;
+            }
+
+            @media screen and (max-width: 405px) {
+              width: 120px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-4 {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    @media screen and (max-width: 485px) {
+      display: none;
+    }
+    .title1 {
+      @include title1;
+      font-size: 1.8rem;
+      position: absolute;
+      top: -30px;
+    }
+    .title2 {
+      @include title2;
+      color: $white1;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    img {
+      height: 27px;
+    }
+  }
+
+  .section-4bis {
+    width: 60%;
+    margin: 40px 290px;
+
+    @media screen and (max-width: 485px) {
+      display: none;
+    }
+    .event {
+      min-height: 300px;
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 15px;
+      .billeterie-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .event-img1 {
+          display: grid;
+          grid-template-columns: 30% 70%;
+          #box-1 {
+            background: url(../../assets/img/event-01.jpg) center/cover;
+            height: 160px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .july {
+              width: 70px;
+              height: 70px;
+              margin-right: 15px;
+              background-color: $black2;
+              color: $white1;
+              font-weight: 900;
+              font-size: 1.3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            .italic {
+              font-size: 0.9rem;
+              font-weight: 400;
+            }
+          }
+          #box-2 {
+            background: $white2;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            h3 {
+              margin: 15px 0 15px 10px;
+              font-weight: 500;
+              letter-spacing: 1px;
+            }
+            span {
+              margin-right: 5px;
+              color: $grey3;
+              font-size: 0.8rem;
+              font-weight: 100;
+              letter-spacing: 1px;
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        .event-img2 {
+          display: grid;
+          grid-template-columns: 30% 70%;
+          #box-3 {
+            background: url(../../assets/img/event-02.jpg) center/cover;
+            height: 160px;
+            width: 190px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .july {
+              width: 70px;
+              height: 70px;
+              margin-right: 20px;
+              background-color: $black2;
+              color: $white1;
+              font-weight: 900;
+              font-size: 1.3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            }
+            .italic {
+              font-size: 0.9rem;
+              font-weight: 400;
+            }
+          }
+          #box-4 {
+            background: $white2;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            h3 {
+              margin: 15px 0 15px 10px;
+              font-weight: 500;
+              letter-spacing: 1px;
+            }
+            span {
+              margin-right: 5px;
+              color: $grey3;
+              font-size: 0.8rem;
+              font-weight: 100;
+              letter-spacing: 1px;
+              i {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .billeterie-2 {
+        background: url(../../assets/img/event-03.jpg) center/cover;
+        height: 335px;
+        .johnnie-night-1 {
+          background: $white2;
+          height: 300px;
+          margin: 15px;
+        }
+        .johnnie-night-2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          #box-5 {
+            .july {
+              width: 70px;
+              height: 70px;
+              margin: 0 auto;
+              background-color: $black2;
+              color: $white1;
+              font-weight: 900;
+              font-size: 1.3rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 30px;
+            }
+            .italic {
+              font-size: 0.9rem;
+              font-weight: 400;
+            }
+          }
+          .johnnie-night-3 {
+            h3 {
+              margin: 40px 40px 15px;
+              width: 85%;
+              font-weight: 500;
+              letter-spacing: 1px;
+            }
+            span {
+              margin: 0 5px 20px 0;
+              padding-left: 8px;
+              color: $grey3;
+              font-size: 0.8rem;
+              font-weight: 100;
+              letter-spacing: 1px;
+              i {
+                margin: 0 5px 50px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-5 {
+    background: url(../../assets/img/gmap.jpg) center/cover;
+    height: 45vh;
+    margin-top: 300px;
+    position: relative;
+
+    @media screen and (max-width: 485px) {
+      margin: 0 auto;
+      height: 40vh;
+      width: 75%;
+    }
+    .profil {
+      height: 35vh;
+      background: $white2;
+      width: 62%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      position: absolute;
+      left: 275px;
+      bottom: 225px;
+
+      @media screen and (max-width: 485px) {
+        left: 20px;
+        bottom: 200px;
+        min-height: 70vh;
+        width: 88%;
+        padding: 0 15px 15px 15px;
+        justify-content: flex-start;
+      }
+
+      @media screen and (max-width: 405px) {
+        min-height: 85vh;
+        left: 15px;
+        bottom: 130px;
+      }
+      img {
+        position: absolute;
+        bottom: 240px;
+
+        @media screen and (max-width: 485px) {
+          bottom: 510px;
+        }
+
+        @media screen and (max-width: 405px) {
+          bottom: 620px;
+        }
+      }
+      p {
+        width: 80%;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 485px) {
+          font-size: 0.9rem;
+          margin-bottom: 25px;
+        }
+      }
+      h3 {
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      h4 {
+        font-size: 0.8rem;
+        color: $yellow;
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 485px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
