@@ -1,14 +1,14 @@
 @font-face {
   font-family: "allura";
-  src: url(../../assets/fonts/Allura-Regular.ttf);
+  src: url(../assets/fonts/Allura-Regular.ttf);
 }
 @font-face {
   font-family: "poppins";
-  src: url(../../assets/fonts/Poppins-Medium.ttf);
+  src: url(../assets/fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: "roboto";
-  src: url(../../assets/fonts/Roboto-Light.ttf);
+  src: url(../assets/fonts/Roboto-Light.ttf);
 }
 * {
   padding: 0;
@@ -117,7 +117,7 @@ header {
   min-height: 100vh;
   width: 92%;
   margin: 0 auto;
-  background: url(../../assets/img/bg-slider-06.jpg) center/cover;
+  background: url(../assets/img/bg-slider-06.jpg) center/cover;
 }
 header .header-content1 {
   display: -webkit-box;
@@ -310,7 +310,7 @@ main .section-1 .left-part h5 {
   }
 }
 main .section-1 .right-part {
-  background: url(../../assets/img/store-01.jpg) center/cover;
+  background: url(../assets/img/store-01.jpg) center/cover;
 }
 @media screen and (max-width: 485px) {
   main .section-1 .right-part {
@@ -407,7 +407,7 @@ main .section-2 .menu-list li:hover {
   }
 }
 main .section-2bis {
-  background: url(../../assets/img/bg-menu-01.jpg) center/cover;
+  background: url(../assets/img/bg-menu-01.jpg) center/cover;
   min-height: 100vh;
   position: relative;
   margin-bottom: 70px;
@@ -829,7 +829,7 @@ main .section-4bis .event .billeterie-1 .event-img1 {
   grid-template-columns: 30% 70%;
 }
 main .section-4bis .event .billeterie-1 .event-img1 #box-1 {
-  background: url(../../assets/img/event-01.jpg) center/cover;
+  background: url(../assets/img/event-01.jpg) center/cover;
   height: 160px;
   width: 190px;
   display: -webkit-box;
@@ -899,7 +899,7 @@ main .section-4bis .event .billeterie-1 .event-img2 {
   grid-template-columns: 30% 70%;
 }
 main .section-4bis .event .billeterie-1 .event-img2 #box-3 {
-  background: url(../../assets/img/event-02.jpg) center/cover;
+  background: url(../assets/img/event-02.jpg) center/cover;
   height: 160px;
   width: 190px;
   display: -webkit-box;
@@ -965,7 +965,7 @@ main .section-4bis .event .billeterie-1 .event-img2 #box-4 span i {
   margin-right: 5px;
 }
 main .section-4bis .event .billeterie-2 {
-  background: url(../../assets/img/event-03.jpg) center/cover;
+  background: url(../assets/img/event-03.jpg) center/cover;
   height: 335px;
 }
 main .section-4bis .event .billeterie-2 .johnnie-night-1 {
@@ -1029,7 +1029,7 @@ main .section-4bis .event .billeterie-2 .johnnie-night-2 .johnnie-night-3 span i
   margin: 0 5px 50px 10px;
 }
 main .section-5 {
-  background: url(../../assets/img/gmap.jpg) center/cover;
+  background: url(../assets/img/gmap.jpg) center/cover;
   height: 45vh;
   margin-top: 300px;
   position: relative;
@@ -1126,7 +1126,7 @@ main .section-5 .profil h4 {
 }
 
 footer {
-  background: url(../../assets/img/bg-footer.jpg) center/cover;
+  background: url(../assets/img/bg-footer.jpg) center/cover;
   height: 25vh;
   width: 92%;
   margin: 0 auto;
